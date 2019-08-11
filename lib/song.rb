@@ -14,11 +14,9 @@ class Song
   end
 
   def self.new_by_filename(str)
-    self.new(str.split(" - ")[1])
+    song = self.new(str.split(" - ")[1])
     artist_object = Artist.find_or_create_by_name(str.split(" - ")[0])
-    artist_object
+    song.artist = artist_object
   end
-  
-  
   
 end
