@@ -17,6 +17,7 @@ class Song
     song = self.new(str.split(" - ")[1])
     artist_object = Artist.find_or_create_by_name(str.split(" - ")[0])
     song.artist = artist_object
+    song
   end
   
 end
