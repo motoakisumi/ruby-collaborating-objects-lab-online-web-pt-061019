@@ -26,7 +26,7 @@ class Artist
     self.all.find{|artist| artist.name == name} ||self.new(name)
   end
   
-  def   
+  def 
   
 end
 
