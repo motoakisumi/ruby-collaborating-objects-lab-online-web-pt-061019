@@ -19,7 +19,7 @@ class Artist
   end
   
   def add_song
-    @songs << Song.
+    @songs << Song.select{|song| song.artist == self}
   
 end
 
