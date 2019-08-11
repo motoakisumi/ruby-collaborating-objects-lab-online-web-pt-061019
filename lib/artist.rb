@@ -22,8 +22,8 @@ class Artist
     song.artist = self
   end
   
-  def self.find_or_create_by_name(string)
-    @@all.find
+  def self.find_or_create_by_name(name)
+    self.all.find{|artist| artist.name == name}
     
   
 end
