@@ -20,6 +20,6 @@ class Song
     song
   end
   
-  def artist_name
-    song.artist = 
+  def artist_name(name)
+    self.new(name)
 end
