@@ -17,4 +17,6 @@ class Song
     Song.new(str.split(" - ")[1])
   end
   
+  
+  
 end
