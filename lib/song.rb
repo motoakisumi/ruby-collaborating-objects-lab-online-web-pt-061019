@@ -20,5 +20,7 @@ class Song
     song.artist = artist_object
     song
   end
+  
+  def 
 
 end
